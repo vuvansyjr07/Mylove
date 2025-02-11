@@ -53,7 +53,7 @@
     <div class="counter" id="loveDays"></div>
     
     <div class="media">
-        <iframe src="https://drive.google.com/file/d/1OisU227MdkSM1UDh8ZlJDMdNYvXzzXFn/preview" width="320" height="240" allow="autoplay"></iframe>
+        <iframe id="myIframe" src="https://drive.google.com/file/d/1OisU227MdkSM1UDh8ZlJDMdNYvXzzXFn/preview" width="320" height="240" allow="autoplay"></iframe>
         <iframe src="https://drive.google.com/file/d/1p2gk83xKi7bVa9t_WNj64YdiG8oH2wM-/preview" width="320" height="240" allow="autoplay"></iframe>
         <iframe src="https://drive.google.com/file/d/1apuNWSw11uUlrjCe0juM4unndnEVItjk/preview" width="320" height="240" allow="autoplay"></iframe>
     </div>
@@ -198,6 +198,12 @@
 
         // Cập nhật số ngày yêu nhau
         calculateLoveDays();
+    </script>
+        <script>
+        const iframe = document.getElementById('myIframe');
+        const video = iframe.contentWindow.document.getElementById('myVideo');
+
+        video.play();
     </script>
 </body>
 </html>
